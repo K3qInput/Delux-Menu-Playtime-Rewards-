@@ -20,7 +20,7 @@ This repository provides a custom configuration for the Delux Menu plugin, speci
 1. Click the green `Code` button on the top right of this page.
 2. Download the repository as a ZIP file, or clone it using Git:
     ```bash
-    git clone https://github.com/yourusername/playtime-rewards-boxpvp.git
+    git clone https://github.com/K3qInput/Delux-Menu-Playtime-Rewards-.git
     ```
 3. Extract the ZIP file (if downloaded) to access the `levels.yml` file.
 
