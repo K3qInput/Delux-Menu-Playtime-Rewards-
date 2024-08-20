@@ -1,0 +1,439 @@
+items:
+  close:
+    display_name: '&l&n&cClose&r'
+    left_click_commands:
+    - '[close]'
+    lore:
+    - ''
+    - '&7&fClick here to close this menu!'
+    - '&8Cooldown: &e24h'
+    material: REDSTONE_BLOCK
+    right_click_commands:
+    - '[close]'
+    slot: 49
+  1:
+    click_commands:
+    - '[close]'
+    - '[console] lp user %player_name% permission set rewards1 true'
+    - '[console] crate key give %player_name% ocean_key 1'
+    - '[console] points give %player_name% 10'
+    - '[console] eco give %player_name% 750'
+    click_requirement:
+      minimum_requirements: 2
+      requirements:
+        permission:
+          deny_commands:
+          - '[close]'
+          - '[message]&cYou have already claimed this reward! Click the level again
+            to see a special message.'
+          input: rewards1
+          output: 'true'
+          type: '!='
+        playtime:
+          deny_commands:
+          - '[close]'
+          - '[message]&cYou don''t have the required playtime!'
+          input: '%statistic_hours_played%'
+          output: '1'
+          type: '>='
+    display_name: '&l&n&dLevel 1&r'
+    lore:
+    - ''
+    - '&7&fRequired Playtime: 1 hour'
+    - ''
+    - '&7&aRewards:'
+    - "&7&8\u2756 &f1 Ocean Crate Key"
+    - "&7&8\u2756 &f750$"
+    - "&7&8\u2756 &f10 Coins"
+    - ''
+    - "&7&8\u279F &fClick to claim your reward!"
+    - '&8Cooldown: &e24h'
+    material: MAGENTA_CANDLE
+    right_click_commands:
+    - '[message]&6[Level 1 Reward]&c You have already claimed this reward! You are
+      progressing well, keep it up!'
+    slot: 10
+  2:
+    click_commands:
+    - '[close]'
+    - '[console] lp user %player_name% permission set rewards2 true'
+    - '[console] crate key give %player_name% ocean_key 2'
+    - '[console] points give %player_name% 20'
+    - '[console] eco give %player_name% 1250'
+    click_requirement:
+      minimum_requirements: 2
+      requirements:
+        permission:
+          deny_commands:
+          - '[close]'
+          - '[message]&cYou have already claimed this reward! Click the level again
+            to see a special message.'
+          input: rewards2
+          output: 'true'
+          type: '!='
+        playtime:
+          deny_commands:
+          - '[close]'
+          - '[message]&cYou don''t have the required playtime!'
+          input: '%statistic_hours_played%'
+          output: '3'
+          type: '>='
+    display_name: '&l&n&bLevel 2&r'
+    lore:
+    - ''
+    - '&7&fRequired Playtime: 3 hours'
+    - ''
+    - '&7&aRewards:'
+    - "&7&8\u2756 &f1 Ocean Crate Key"
+    - "&7&8\u2756 &f1,250$"
+    - "&7&8\u2756 &f20 Coins"
+    - ''
+    - "&7&8\u279F &fClick to claim your reward!"
+    - '&8Cooldown: &e24h'
+    material: LIGHT_BLUE_CANDLE
+    right_click_commands:
+    - '[message]&6[Level 2 Reward]&c You have already claimed this reward! Keep leveling
+      up, more rewards await!'
+    slot: 11
+  3:
+    click_commands:
+    - '[close]'
+    - '[console] lp user %player_name% permission set rewards3 true'
+    - '[console] crate key give %player_name% ocean_key 3'
+    - '[console] points give %player_name% 30'
+    - '[console] eco give %player_name% 1750'
+    click_requirement:
+      minimum_requirements: 2
+      requirements:
+        permission:
+          deny_commands:
+          - '[close]'
+          - '[message]&cYou have already claimed this reward! Click the level again
+            to see a special message.'
+          input: rewards3
+          output: 'true'
+          type: '!='
+        playtime:
+          deny_commands:
+          - '[close]'
+          - '[message]&cYou don''t have the required playtime!'
+          input: '%statistic_hours_played%'
+          output: '6'
+          type: '>='
+    display_name: '&l&n&aLevel 3&r'
+    lore:
+    - ''
+    - '&7&fRequired Playtime: 6 hours'
+    - ''
+    - '&7&aRewards:'
+    - "&7&8\u2756 &f1 Ocean Crate Key"
+    - "&7&8\u2756 &f1,750$"
+    - "&7&8\u2756 &f30 Coins"
+    - ''
+    - "&7&8\u279F &fClick to claim your reward!"
+    - '&8Cooldown: &e24h'
+    material: LIME_CANDLE
+    right_click_commands:
+    - '[message]&6[Level 3 Reward]&c You have already claimed this reward! You are
+      halfway there, keep going!'
+    slot: 12
+  4:
+    click_commands:
+    - '[close]'
+    - '[console] lp user %player_name% permission set rewards4 true'
+    - '[console] crate key give %player_name% ocean_key 4'
+    - '[console] points give %player_name% 40'
+    - '[console] eco give %player_name% 2500'
+    click_requirement:
+      minimum_requirements: 2
+      requirements:
+        permission:
+          deny_commands:
+          - '[close]'
+          - '[message]&cYou have already claimed this reward! Click the level again
+            to see a special message.'
+          input: rewards4
+          output: 'true'
+          type: '!='
+        playtime:
+          deny_commands:
+          - '[close]'
+          - '[message]&cYou don''t have the required playtime!'
+          input: '%statistic_hours_played%'
+          output: '12'
+          type: '>='
+    display_name: '&l&n&eLevel 4&r'
+    lore:
+    - ''
+    - '&7&fRequired Playtime: 12 hours'
+    - ''
+    - '&7&aRewards:'
+    - "&7&8\u2756 &f1 Ocean Crate Key"
+    - "&7&8\u2756 &f2,500$"
+    - "&7&8\u2756 &f40 Coins"
+    - ''
+    - "&7&8\u279F &fClick to claim your reward!"
+    - '&8Cooldown: &e24h'
+    material: YELLOW_CANDLE
+    right_click_commands:
+    - '[message]&6[Level 4 Reward]&c You have already claimed this reward! Great work,
+      the rewards keep getting better!'
+    slot: 13
+  5:
+    click_commands:
+    - '[close]'
+    - '[console] lp user %player_name% permission set rewards5 true'
+    - '[console] crate key give %player_name% ocean_key 6'
+    - '[console] points give %player_name% 60'
+    - '[console] eco give %player_name% 5000'
+    click_requirement:
+      minimum_requirements: 2
+      requirements:
+        permission:
+          deny_commands:
+          - '[close]'
+          - '[message]&cYou have already claimed this reward! Click the level again
+            to see a special message.'
+          input: rewards5
+          output: 'true'
+          type: '!='
+        playtime:
+          deny_commands:
+          - '[close]'
+          - '[message]&cYou don''t have the required playtime!'
+          input: '%statistic_hours_played%'
+          output: '24'
+          type: '>='
+    display_name: '&l&n&6Level 5&r'
+    lore:
+    - ''
+    - '&7&fRequired Playtime: 24 hours'
+    - ''
+    - '&7&aRewards:'
+    - "&7&8\u2756 &f3 Ocean Crate Key"
+    - "&7&8\u2756 &f5,000$"
+    - "&7&8\u2756 &f60 Coins"
+    - ''
+    - "&7&8\u279F &fClick to claim your reward!"
+    - '&8Cooldown: &e24h'
+    material: ORANGE_CANDLE
+    right_click_commands:
+    - '[message]&6[Level 5 Reward]&c You have already claimed this reward! Fantastic,
+      but don''t stop now!'
+    slot: 14
+  6:
+    click_commands:
+    - '[close]'
+    - '[console] lp user %player_name% permission set rewards6 true'
+    - '[console] crate key give %player_name% ocean_key 4'
+    - '[console] points give %player_name% 80'
+    - '[console] eco give %player_name% 7500'
+    click_requirement:
+      minimum_requirements: 2
+      requirements:
+        permission:
+          deny_commands:
+          - '[close]'
+          - '[message]&cYou have already claimed this reward! Click the level again
+            to see a special message.'
+          input: rewards6
+          output: 'true'
+          type: '!='
+        playtime:
+          deny_commands:
+          - '[close]'
+          - '[message]&cYou don''t have the required playtime!'
+          input: '%statistic_hours_played%'
+          output: '36'
+          type: '>='
+    display_name: '&l&n&dLevel 6&r'
+    lore:
+    - ''
+    - '&7&fRequired Playtime: 36 hours'
+    - ''
+    - '&7&aRewards:'
+    - "&7&8\u2756 &f4 Ocean Crate Key"
+    - "&7&8\u2756 &f7,500$"
+    - "&7&8\u2756 &f80 Coins"
+    - ''
+    - "&7&8\u279F &fClick to claim your reward!"
+    - '&8Cooldown: &e24h'
+    material: PINK_CANDLE
+    right_click_commands:
+    - '[message]&6[Level 6 Reward]&c You have already claimed this reward! Amazing
+      progress, keep pushing!'
+    slot: 15
+  7:
+    click_commands:
+    - '[close]'
+    - '[console] lp user %player_name% permission set rewards7 true'
+    - '[console] crate key give %player_name% ocean_key 5'
+    - '[console] points give %player_name% 100'
+    - '[console] eco give %player_name% 10000'
+    click_requirement:
+      minimum_requirements: 2
+      requirements:
+        permission:
+          deny_commands:
+          - '[close]'
+          - '[message]&cYou have already claimed this reward! Click the level again
+            to see a special message.'
+          input: rewards7
+          output: 'true'
+          type: '!='
+        playtime:
+          deny_commands:
+          - '[close]'
+          - '[message]&cYou don''t have the required playtime!'
+          input: '%statistic_hours_played%'
+          output: '48'
+          type: '>='
+    display_name: '&l&n&9Level 7&r'
+    lore:
+    - ''
+    - '&7&fRequired Playtime: 48 hours'
+    - ''
+    - '&7&aRewards:'
+    - "&7&8\u2756 &f5 Ocean Crate Key"
+    - "&7&8\u2756 &f10,000$"
+    - "&7&8\u2756 &f100 Coins"
+    - ''
+    - "&7&8\u279F &fClick to claim your reward!"
+    - '&8Cooldown: &e24h'
+    material: BLUE_CANDLE
+    right_click_commands:
+    - '[message]&6[Level 7 Reward]&c You have already claimed this reward! You are
+      a true veteran, well done!'
+    slot: 16
+  8:
+    click_commands:
+    - '[close]'
+    - '[console] lp user %player_name% permission set rewards8 true'
+    - '[console] crate key give %player_name% ocean_key 6'
+    - '[console] points give %player_name% 120'
+    - '[console] eco give %player_name% 15000'
+    click_requirement:
+      minimum_requirements: 2
+      requirements:
+        permission:
+          deny_commands:
+          - '[close]'
+          - '[message]&cYou have already claimed this reward! Click the level again
+            to see a special message.'
+          input: rewards8
+          output: 'true'
+          type: '!='
+        playtime:
+          deny_commands:
+          - '[close]'
+          - '[message]&cYou don''t have the required playtime!'
+          input: '%statistic_hours_played%'
+          output: '60'
+          type: '>='
+    display_name: '&l&n&5Level 8&r'
+    lore:
+    - ''
+    - '&7&fRequired Playtime: 60 hours'
+    - ''
+    - '&7&aRewards:'
+    - "&7&8\u2756 &f6 Ocean Crate Key"
+    - "&7&8\u2756 &f15,000$"
+    - "&7&8\u2756 &f120 Coins"
+    - ''
+    - "&7&8\u279F &fClick to claim your reward!"
+    - '&8Cooldown: &e24h'
+    material: PURPLE_CANDLE
+    right_click_commands:
+    - '[message]&6[Level 8 Reward]&c You have already claimed this reward! You are
+      unstoppable, incredible work!'
+    slot: 17
+  9:
+    click_commands:
+    - '[close]'
+    - '[console] lp user %player_name% permission set rewards9 true'
+    - '[console] crate key give %player_name% ocean_key 7'
+    - '[console] points give %player_name% 150'
+    - '[console] eco give %player_name% 20000'
+    click_requirement:
+      minimum_requirements: 2
+      requirements:
+        permission:
+          deny_commands:
+          - '[close]'
+          - '[message]&cYou have already claimed this reward! Click the level again
+            to see a special message.'
+          input: rewards9
+          output: 'true'
+          type: '!='
+        playtime:
+          deny_commands:
+          - '[close]'
+          - '[message]&cYou don''t have the required playtime!'
+          input: '%statistic_hours_played%'
+          output: '72'
+          type: '>='
+    display_name: '&l&n&aLevel 9&r'
+    lore:
+    - ''
+    - '&7&fRequired Playtime: 72 hours'
+    - ''
+    - '&7&aRewards:'
+    - "&7&8\u2756 &f7 Ocean Crate Key"
+    - "&7&8\u2756 &f20,000$"
+    - "&7&8\u2756 &f150 Coins"
+    - ''
+    - "&7&8\u279F &fClick to claim your reward!"
+    - '&8Cooldown: &e24h'
+    material: GREEN_CANDLE
+    right_click_commands:
+    - '[message]&6[Level 9 Reward]&c You have already claimed this reward! Only one
+      more level to go!'
+    slot: 18
+  10:
+    click_commands:
+    - '[close]'
+    - '[console] lp user %player_name% permission set rewards10 true'
+    - '[console] crate key give %player_name% ocean_key 10'
+    - '[console] points give %player_name% 200'
+    - '[console] eco give %player_name% 25000'
+    click_requirement:
+      minimum_requirements: 2
+      requirements:
+        permission:
+          deny_commands:
+          - '[close]'
+          - '[message]&cYou have already claimed this reward! Click the level again
+            to see a special message.'
+          input: rewards10
+          output: 'true'
+          type: '!='
+        playtime:
+          deny_commands:
+          - '[close]'
+          - '[message]&cYou don''t have the required playtime!'
+          input: '%statistic_hours_played%'
+          output: '96'
+          type: '>='
+    display_name: '&l&n&cLevel 10&r'
+    lore:
+    - ''
+    - '&7&fRequired Playtime: 96 hours'
+    - ''
+    - '&7&aRewards:'
+    - "&7&8\u2756 &f10 Ocean Crate Key"
+    - "&7&8\u2756 &f25,000$"
+    - "&7&8\u2756 &f200 Coins"
+    - ''
+    - "&7&8\u279F &fClick to claim your reward!"
+    - '&8Cooldown: &e24h'
+    material: RED_CANDLE
+    right_click_commands:
+    - '[message]&6[Level 10 Reward]&c You have already claimed this reward! You have
+      reached the highest level, congratulations!'
+    slot: 19
+menu_title: '&l&n&bPlaytime Rewards&r'
+open_command:
+- levels
+- level
+register_command: true
+size: 54
