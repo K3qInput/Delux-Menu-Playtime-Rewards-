@@ -1,0 +1,219 @@
+
+# DeluxeMenus Configuration
+
+menu_title: '&bPlaytime Rewards'
+
+open_command:
+  - levels
+  - level
+register_command: true
+size: 54
+
+items:
+
+  close:
+    material: REDSTONE_BLOCK
+    slot: 49
+    display_name: '&cClose'
+    lore:
+      - ''
+      - '&fClick here to close this menu!'
+    left_click_commands:
+      - '[close]'
+    right_click_commands:
+      - '[close]'
+
+  1:
+    material: MAGENTA_CANDLE
+    slot: 10
+    display_name: '&dLevel 1'
+    lore:
+      - ''
+      - '&fRequired Playtime: 1 hour'
+      - ''
+      - '&aRewards:'
+      - '&8❖ &f1 Ocean Crate Key'
+      - '&8❖ &f750$'
+      - '&8❖ &f10 Coins'
+      - ''
+      - '&8➟ &fClick to claim your reward!'
+    click_requirement:
+      minimum_requirements: 2
+      requirements:
+        playtime:
+          type: '>='
+          input: '%statistic_hours_played%'
+          output: '1'
+          deny_commands:
+            - '[close]'
+            - '[message]&cYou don''t have the required playtime!'
+        permission:
+          type: '!='
+          input: 'rewards1'
+          output: 'true'
+          deny_commands:
+            - '[close]'
+            - '[message]&cYou have already claimed this reward!'
+    click_commands:
+      - '[close]'
+      - '[console] lp user %player_name% permission set rewards1 true'
+      - '[console] crate key give %player_name% ocean_key 1'
+      - '[console] points give %player_name% 10'
+      - '[console] eco give %player_name% 750'
+
+  2:
+    material: LIGHT_BLUE_CANDLE
+    slot: 11
+    display_name: '&bLevel 2'
+    lore:
+      - ''
+      - '&fRequired Playtime: 3 hours'
+      - ''
+      - '&aRewards:'
+      - '&8❖ &f1 Ocean Crate Key'
+      - '&8❖ &f1,250$'
+      - '&8❖ &f20 Coins'
+      - ''
+      - '&8➟ &fClick to claim your reward!'
+    click_requirement:
+      minimum_requirements: 2
+      requirements:
+        playtime:
+          type: '>='
+          input: '%statistic_hours_played%'
+          output: '3'
+          deny_commands:
+            - '[close]'
+            - '[message]&cYou don''t have the required playtime!'
+        permission:
+          type: '!='
+          input: 'rewards2'
+          output: 'true'
+          deny_commands:
+            - '[close]'
+            - '[message]&cYou have already claimed this reward!'
+    click_commands:
+      - '[close]'
+      - '[console] lp user %player_name% permission set rewards2 true'
+      - '[console] crate key give %player_name% ocean_key 2'
+      - '[console] points give %player_name% 20'
+      - '[console] eco give %player_name% 1250'
+
+  3:
+    material: LIME_CANDLE
+    slot: 12
+    display_name: '&aLevel 3'
+    lore:
+      - ''
+      - '&fRequired Playtime: 6 hours'
+      - ''
+      - '&aRewards:'
+      - '&8❖ &f1 Ocean Crate Key'
+      - '&8❖ &f1,750$'
+      - '&8❖ &f30 Coins'
+      - ''
+      - '&8➟ &fClick to claim your reward!'
+    click_requirement:
+      minimum_requirements: 2
+      requirements:
+        playtime:
+          type: '>='
+          input: '%statistic_hours_played%'
+          output: '6'
+          deny_commands:
+            - '[close]'
+            - '[message]&cYou don''t have the required playtime!'
+        permission:
+          type: '!='
+          input: 'rewards3'
+          output: 'true'
+          deny_commands:
+            - '[close]'
+            - '[message]&cYou have already claimed this reward!'
+    click_commands:
+      - '[close]'
+      - '[console] lp user %player_name% permission set rewards3 true'
+      - '[console] crate key give %player_name% ocean_key 3'
+      - '[console] points give %player_name% 30'
+      - '[console] eco give %player_name% 1750'
+
+  4:
+    material: YELLOW_CANDLE
+    slot: 13
+    display_name: '&eLevel 4'
+    lore:
+      - ''
+      - '&fRequired Playtime: 12 hours'
+      - ''
+      - '&aRewards:'
+      - '&8❖ &f1 Ocean Crate Key'
+      - '&8❖ &f2,500$'
+      - '&8❖ &f40 Coins'
+      - ''
+      - '&8➟ &fClick to claim your reward!'
+    click_requirement:
+      minimum_requirements: 2
+      requirements:
+        playtime:
+          type: '>='
+          input: '%statistic_hours_played%'
+          output: '12'
+          deny_commands:
+            - '[close]'
+            - '[message]&cYou don''t have the required playtime!'
+        permission:
+          type: '!='
+          input: 'rewards4'
+          output: 'true'
+          deny_commands:
+            - '[close]'
+            - '[message]&cYou have already claimed this reward!'
+    click_commands:
+      - '[close]'
+      - '[console] lp user %player_name% permission set rewards4 true'
+      - '[console] crate key give %player_name% ocean_key 4'
+      - '[console] points give %player_name% 40'
+      - '[console] eco give %player_name% 2500'
+
+  5:
+    material: ORANGE_CANDLE
+    slot: 14
+    display_name: '&6Level 5'
+    lore:
+      - ''
+      - '&fRequired Playtime: 24 hours'
+      - ''
+      - '&aRewards:'
+      - '&8❖ &f3 Ocean Crate Key'
+      - '&8❖ &f5,000$'
+      - '&8❖ &f60 Coins'
+      - ''
+      - '&8➟ &fClick to claim your reward!'
+    click_requirement:
+      minimum_requirements: 2
+      requirements:
+        playtime:
+          type: '>='
+          input: '%statistic_hours_played%'
+          output: '24'
+          deny_commands:
+            - '[close]'
+            - '[message]&cYou don''t have the required playtime!'
+        permission:
+          type: '!='
+          input: 'rewards5'
+          output: 'true'
+          deny_commands:
+            - '[close]'
+            - '[message]&cYou have already claimed this reward!'
+    click_commands:
+      - '[close]'
+      - '[console] lp user %player_name% permission set rewards5 true'
+      - '[console] crate key give %player_name% ocean_key 6'
+      - '[console] points give %player_name% 60'
+      - '[console] eco give %player_name% 5000'
+
+# Example for opening the menu:
+
+open_menu:
+  - '[player] dm open levels %player_name%'
